@@ -1,4 +1,5 @@
-﻿using System;
+﻿#if FORCE_COMPILE_ALL_MYBOX
+using System;
 using UnityEngine;
 
 namespace MyBox
@@ -37,3 +38,4 @@ namespace MyBox
 		}
 	}
 }
+#endif

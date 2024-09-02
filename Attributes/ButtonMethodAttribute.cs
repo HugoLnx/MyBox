@@ -14,7 +14,11 @@ namespace MyBox
 {
 	[AttributeUsage(AttributeTargets.Method)] 
 	[MeansImplicitUse]
+#if FORCE_COMPILE_ALL_MYBOX
 	public class ButtonMethodAttribute : PropertyAttribute
+#else
+	internal class ButtonMethodAttribute : PropertyAttribute
+#endif
 	{
 		public readonly ButtonMethodDrawOrder DrawOrder;
 		public readonly ConditionalData Condition;

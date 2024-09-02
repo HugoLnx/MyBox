@@ -1,3 +1,4 @@
+#if FORCE_COMPILE_ALL_MYBOX
 using System.Collections.Generic;
 using UnityEngine;
 
@@ -182,4 +183,5 @@ namespace MyBox.Internal
 		}
 	}
 }
+#endif
 #endif

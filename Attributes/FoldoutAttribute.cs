@@ -1,4 +1,5 @@
-﻿// ---------------------------------------------------------------------------- 
+﻿#if FORCE_COMPILE_ALL_MYBOX
+// ---------------------------------------------------------------------------- 
 // Author: Dimitry, PixeyeHQ
 // Project : UNITY FOLDOUT
 // https://github.com/PixeyeHQ/InspectorFoldoutGroup
@@ -300,4 +301,5 @@ namespace MyBox.Internal
         }
     }
 }
+#endif
 #endif

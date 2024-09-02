@@ -1,4 +1,5 @@
-﻿#if UNITY_EDITOR && !MYBOX_DISABLE_INSPECTOR_OVERRIDE
+﻿#if FORCE_COMPILE_ALL_MYBOX
+#if UNITY_EDITOR && !MYBOX_DISABLE_INSPECTOR_OVERRIDE
 namespace MyBox.Internal
 {
     using UnityEditor;
@@ -38,4 +39,5 @@ namespace MyBox.Internal
         }
     }
 }
+#endif
 #endif
