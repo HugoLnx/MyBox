@@ -36,7 +36,9 @@ namespace MyBox
 
 		[Tooltip("The name of the referenced scene. This may be used at runtime to load the scene.")]
 		public string SceneName;
-
+		
+		public int SceneIndex => sceneIndex;
+		
 		[SerializeField] private int sceneIndex = -1;
 
 		[SerializeField] private bool sceneEnabled;
@@ -338,8 +340,7 @@ namespace MyBox.Internal
 					if (sceneName.stringValue != sceneAsset.name)
 						sceneName.stringValue = sceneAsset.name;
 				}
-
-				DisplaySceneErrorPrompt(!buildScene.Present ? ERROR_SCENE_MISSING : ERROR_SCENE_DISABLED);
+				else DisplaySceneErrorPrompt(!buildScene.Present ? ERROR_SCENE_MISSING : ERROR_SCENE_DISABLED);
 			}
 			else
 			{
